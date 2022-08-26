@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+{% block header %}
+    <a href="/">Главная</a>
+{% endblock %}
+{% block body %}
+
+    <form method="post">
+        <h1>Создание поста</h1>
+        <textarea name="title" placeholder="Заглавие" height="40px" id="title"></textarea><br>
+        <textarea name="intro" placeholder="Краткое содержание" height="100px" id="intro"></textarea><br>
+        <textarea name="text" placeholder="Текст поста" height="300px" id="text"></textarea><br>
+        <input type="submit" value="Отправить">
+    </form>
+
+{% endblock %}

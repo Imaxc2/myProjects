@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block header %}
+    <a href="/">Главная</a>
+{% endblock %}
+
+{% block body %}
+<h1>{{ article.title }}</h1>
+    <div class="post">
+        <p>{{ article.text }}</p>
+        <p><b>{{ article.date.date() }}</b></p>
+    </div>
+
+{% endblock %}
