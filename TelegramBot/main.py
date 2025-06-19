@@ -4,7 +4,8 @@ import requests
 import time
 import webbrowser
 
-bot = telebot.TeleBot('5151583155:AAF63Mi2lUS4waQ2H5NehXX3dEJ0Swgc5xY')
+TOKEN = ""
+bot = telebot.TeleBot(TOKEN)
 waiturl = False
 
 
